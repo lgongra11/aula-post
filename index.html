@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Livros</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/consulta.css">
+        <script src="js/get.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Lista de livros</h1>
+            <p>Prática com método GET: buscar e exibir livros da API do Codeverse</p>
+        </header>
+        <main>
+            <a href="pages/cadastro.html">Fazer o cadastro de um livro</a>
+            <section id="conteiner-titulo-lista">
+                <h2 id="titulo-lista">Livros cadastrados</h2>
+                <p>Os livros são carregados automáticamente ao iniciar a página</p>
+                <p id="resposta"></p>
+                <ul id="lista-livros"></ul>
+            </section>
+        </main>
+    <template id="modelo-livro">
+        <li>
+            <section class="card-capa">
+                <img id="imagem-livros" alt="">
+            </section>
+            <section class="card-conteudo">
+                <h3 class="autor"></h3>
+                <p><strong>Gênero: </strong><span class="genero"></span></p>
+                <p><strong>Ano de publicação: </strong><span class="ano_publicacao"></span></p>
+                <p><strong>Número de páginas: </strong><span class="numero_paginas"></span></p>
+            </section>
+        </li>
+    </template>
+</body>
+</html>

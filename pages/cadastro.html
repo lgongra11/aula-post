@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de livros</title>
+    <script src="../js/post.js" defer></script>
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de livros</h1>
+        <p>Preencha o dados abaixo!</p>
+    </header>
+    <main>
+        <section>
+            <p><a href="../index.html">Consultar livros</a></p>
+            <h2>Novo livro</h2>
+
+            <form id="formulario-livro">
+                <label for="title">Nome do livro:</label>
+                <input id="title" name="title" type="text" required>
+
+                <label for="autor">Autor do livro:</label>
+                <input id="autor" name="autor" type="text" required>
+
+                <label for="genero">Gênero do livro:</label>
+                <input id="genero" name="genero" type="text" required>
+
+                <label for="ano_publicacao">Ano de publicação do livro:</label>
+                <input id="ano_publicacao" name="ano_publicacao" type="number" required>
+
+                <label for="numero_paginas">Número de páginas do livro:</label>
+                <input id="numero_paginas" name="numero_paginas" type="text" required>
+
+                <label for="imageUrl">URL da imagem (opcional):</label>
+                <input id="imageUrl" name="imageUrl" type="url">
+
+                <button type="submit" id="resposta">Cadastrar livro</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
